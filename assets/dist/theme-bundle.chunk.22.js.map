@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./assets/js/theme/subscribe.js"],"names":["Subscribe"],"mappings":";;;;;;;;;;;;;;;;;;AAAA;;IAEqBA,S;;;;;;;;;;EAAkB,qD;;+DAAlBA,S","file":"theme-bundle.chunk.22.js","sourcesContent":["import PageManager from './page-manager';\n\nexport default class Subscribe extends PageManager {}\n"],"sourceRoot":""}

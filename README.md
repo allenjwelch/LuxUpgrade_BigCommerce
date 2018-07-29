@@ -14,4 +14,33 @@
   - Attempted to adjust settings within breackpoints (ex. _heroCarousel.scss), but I assume changes were being overwritten in another file. 
 - Could not remove underline from hero carousel content
 - Sizing and placing SVG images
+- Many of the images I uploaded while in Stencil CLI were not visible after uploading theme to bigCommerce. I have added images below of the modifications as seen on localhost
 
+## Localhost Images
+### Header_Desktop
+![title image](/assets/img/localhost/header_desktop.PNG)
+
+### Header_Mobile
+![title image](/assets/img/localhost/header_mobile.PNG)
+
+### Sub Categories_Desktop
+![title image](/assets/img/localhost/subCat-featured_desktop.PNG)
+
+### Sub Categories_Mobile
+![title image](/assets/img/localhost/subCat_mobile.PNG)
+
+### New Tech_Desktop
+![title image](/assets/img/localhost/newTech-research_desktop.PNG)
+
+### New Tech_Mobile
+![title image](/assets/img/localhost/newTech_mobile.PNG)
+
+### Research & Footer_Desktop
+![title image](/assets/img/localhost/research-footer_desktop.PNG)
+
+### Research_Mobile
+![title image](/assets/img/localhost/research_mobile.PNG)
+
+
+### Footer_Mobile
+![title image](/assets/img/localhost/footer_mobile.PNG)

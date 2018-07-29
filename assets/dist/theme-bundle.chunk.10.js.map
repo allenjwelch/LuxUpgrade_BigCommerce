@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./assets/js/theme/brands.js"],"names":["Brands"],"mappings":";;;;;;;;;;;;;;;;;;AAAA;;IAEqBA,M;;;;;;;;;;EAAe,qD;;+DAAfA,M","file":"theme-bundle.chunk.10.js","sourcesContent":["import PageManager from './page-manager';\n\nexport default class Brands extends PageManager {}\n"],"sourceRoot":""}
