@@ -1,5 +1,6 @@
 # LuxUpgrade_BigCommerce
 
+## Deployed: http://luxupgrade.mybigcommerce.com/
 
 ## Modification Notes:
 - Changed "New" to "Featured" products (could not locate how to add featured products)
