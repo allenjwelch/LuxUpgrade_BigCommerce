@@ -1,0 +1,12 @@
+{
+  "normalStoreUrl": "http://luxupgrade.mybigcommerce.com/",
+  "port": "3000",
+  "clientId": "bwsv5wk7nqjdba659rms0p705ncl9pl",
+  "accessToken": "9hjhwk3b4ro40ltsd2873ypi8m91f7d",
+  "customLayouts": {
+    "brand": {},
+    "category": {},
+    "page": {},
+    "product": {}
+  }
+}

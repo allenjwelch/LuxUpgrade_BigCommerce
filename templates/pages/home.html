@@ -1,0 +1,125 @@
+---
+products:
+    new:
+        limit: {{theme_settings.homepage_new_products_count}}
+    featured:
+        limit: {{theme_settings.homepage_featured_products_count}}
+    top_sellers:
+        limit: {{theme_settings.homepage_top_products_count}}
+carousel: {{theme_settings.homepage_show_carousel}}
+blog:
+    recent_posts:
+        limit: {{theme_settings.homepage_blog_posts_count}}
+---
+{{#partial "hero"}}
+    {{#if carousel}}
+        {{> components/carousel}}
+    {{/if}}
+    {{{snippet 'home_content'}}}
+{{/partial}}
+
+{{#partial "page"}}
+
+    {{#each shipping_messages}}
+        {{> components/common/alert-info message}}
+    {{/each}}
+
+<div class="main full">
+    <div class="subCats">
+        <img class="subCat1" src="../../assets/img/subCat1.PNG" alt="subCat1">
+        <h2>SUB CATEGORY</h2>
+    </div>
+
+    <div class="subCats">
+        <img class="subCat2" src="../../assets/img/subCat2.PNG" alt="subCat2">
+        <h2>SUB CATEGORY</h2>
+    </div>
+
+    <div class="subCats">
+        <img class="subCat3" src="../../assets/img/subCat3.PNG" alt="subCat3">
+        <h2>SUB CATEGORY</h2>
+    </div>
+    
+
+    {{#if products.featured}}
+        {{> components/products/featured products=products.featured columns=theme_settings.homepage_featured_products_column_count}}
+    {{/if}}
+
+    {{#if products.top_sellers}}
+        {{> components/products/top products=products.top_sellers columns=theme_settings.homepage_top_products_column_count}}
+    {{/if}}
+
+    {{#if products.new}}
+        {{> components/products/new products=products.new columns=theme_settings.homepage_new_products_column_count}}
+    {{/if}}
+
+    <h2 class="page-heading"><span>New Tech Upgrades</span></h2>
+    <div class="newTech">
+        <div id="newTech-div">
+            <h3>Security Devices</h3>
+            <div class="newTech-img">
+                <img src="http://via.placeholder.com/150x200" alt="#">
+                <h6>Product Title Here</h6>
+                <h5><b>$2,000</b></h5>
+                <button>CHOOSE OPTIONS</button>
+            </div>
+            <div class="newTech-img">
+                <img src="http://via.placeholder.com/150x200" alt="#">
+                <h6>Product Title Here</h6>
+                <h5><b>$2,000</b></h5>
+                <button>CHOOSE OPTIONS</button>
+            </div>
+        </div>
+        <div id="newTech-div">
+            <h3>Luxury Fixtures</h3>
+            <div class="newTech-img">
+                <img src="http://via.placeholder.com/150x200" alt="#">
+                <h6>Product Title Here</h6>
+                <h5><b>$2,000</b></h5>
+                <button>CHOOSE OPTIONS</button>
+            </div>
+            <div class="newTech-img">
+                <img src="http://via.placeholder.com/150x200" alt="#">
+                <h6>Product Title Here</h6>
+                <h5><b>$2,000</b></h5>
+                <button>CHOOSE OPTIONS</button>
+            </div>
+        </div>
+        <div id="newTech-div">
+            <h3>Exterior Embellishments</h3>
+            <div class="newTech-img">
+                <img src="http://via.placeholder.com/150x200" alt="#">
+                <h6>Product Title Here</h6>
+                <h5><b>$2,000</b></h5>
+                <button>CHOOSE OPTIONS</button>
+            </div>
+            <div class="newTech-img">
+                <img src="http://via.placeholder.com/150x200" alt="#">
+                <h6>Product Title Here</h6>
+                <h5><b>$2,000</b></h5>
+                <button>CHOOSE OPTIONS</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="research">
+        <img class="researchImgMain" src="../../assets/img/researchDev.PNG" alt="researchImg">
+        <div class="researchTitle">
+            <img class="researchTitleLogo" src="../../assets/img/RDlogo.PNG" alt="researchImg">
+            <h5>Be a Product Tester and Get Paid to Upgrade</h5>
+            <button>FIND OUT HOW</button>
+        </div>
+        <hr>
+        <div class="researchInfo">
+            <h3><b>Search Engine Optimization Text Here</b></h3>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate maxime modi quos necessitatibus ut corporis accusamus quas et odit, dicta pariatur libero officia reiciendis. Laudantium dolore maiores sint odit sed neque alias amet debitis odio molestiae aliquam tempora suscipit laboriosam eius, ab sapiente optio itaque quia pariatur placeat. Iure et a sit officia, eius quibusdam dignissimos aspernatur iusto placeat dicta reiciendis fugiat modi cum consequuntur error illo, libero ratione, est veniam repudiandae! Laudantium vitae veniam magni vel qui quisquam officia aperiam ab, eligendi a totam. Repellendus assumenda voluptate culpa eum libero similique, dolorem, voluptatem laborum ipsum dolor doloribus ducimus ex?
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+{{/partial}}
+{{> layout/base}}
