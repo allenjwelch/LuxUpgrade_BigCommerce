@@ -123,7 +123,6 @@
         top: 50%;
         transform: translateY(-50%);
         width: remCalc(700px);
-        // text-align: center;
         color: black; 
 
 
@@ -134,47 +133,70 @@
 }
 
 .heroCarousel-title {
-    // color: $carousel-title-color;
-    color: white;
-    font-size: fontSize("small");
+    color: $carousel-title-color;
+    font-size: 32px;
     margin-top: 0;
+    text-align: center; 
+    text-decoration: none; 
 
-    @include breakpoint("medium") {
-        font-size: fontSize("hero");
-    }
 
-    // @media (max-width: "medium") {
-    //     color: black;
-    //     text-align: center; 
+    // @include breakpoint("large") { //min-width: 1261px
+    //     color: blue; 
+    // }
+    // @include breakpoint("medium") { // min-width: 801px
+    //     font-size: fontSize("hero");
+    //     color: green; 
+    // }
+    // @include breakpoint("small") { // min-width: 551px
+    //     color: white; 
 
     // }
 
 }
 
-.heroCarousel-description {
-    // color: $carousel-description-color;
-    color: white;
-    font-size: fontSize("tiny");
-    margin: 0;
-
-    @include breakpoint("small") {
-        font-size: fontSize("smallest");
-        // color: black;
-
+@media only screen and (min-width: 801px) {
+    .heroCarousel-title {
+        color: #ffffff; 
+        font-size: fontSize("hero");
+        text-align: left; 
     }
+}
 
-    @include breakpoint("medium") {
+
+.heroCarousel-description {
+    color: $carousel-description-color;
+    font-size: fontSize("small");
+    margin: 0;
+    text-align: center; 
+    text-decoration-color: white; 
+
+    // @include breakpoint("small") {
+    //     font-size: fontSize("smallest");
+    // }
+
+    // @include breakpoint("medium") {
+    //     font-size: fontSize("smaller");
+    // }
+}
+
+@media only screen and (min-width: 801px) {
+    .heroCarousel-description {
+        color: #ffffff; 
+        text-align: left; 
         font-size: fontSize("smaller");
-        // color: black;
-
     }
 }
 
 .heroCarousel-action {
-    margin: 0;
+    display: block; 
+    margin: 10px auto;
     background-color: black; 
+    width: 80%; 
+
 
     @include breakpoint("medium") {
         margin-top: spacing("single");
+        margin: 10px 0; 
+        width: 150px; 
     }
 }
